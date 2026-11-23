@@ -12,7 +12,7 @@ load_dotenv()
 DB_URL = os.environ.get("DB_URL")
 
 engine = create_engine(
-     "postgresql+psycopg://postgres:12345678@localhost:5432/nutrition",
+     DB_URL,
     echo=True
 )
 Base = declarative_base()
