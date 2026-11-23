@@ -26,7 +26,7 @@ app.config.update(
 
 CORS(app, origins=[
     "http://localhost:5173",
-    "https://nutritionapp-kce9.onrender.com/"
+    "https://nutritionapp-kce9.onrender.com"
 ], supports_credentials=True)
 
 
