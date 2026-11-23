@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import Login from "./Login.jsx";
-import axios from "axios";
+import axios from "./api/axios.js"
 import {Route, Routes, Navigate, useNavigate} from 'react-router-dom';
 import ProtectedRout from "./ProtectedRout.jsx";
 import Home from "./Home.jsx";

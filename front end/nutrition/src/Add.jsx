@@ -6,7 +6,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
-import axios from "axios";
+import axios from './api/axios.js';
 import {useState, useEffect} from "react";
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';

@@ -6,7 +6,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import axios from 'axios';
+import axios from './api/axios.js';
 import {useNavigate} from 'react-router-dom';
 import CircularProgress from "@mui/material/CircularProgress";
 import Paper from '@mui/material/Paper';

@@ -2,7 +2,7 @@ import {useLocation, useNavigate} from "react-router-dom";
 import Card from "./Card.jsx";
 import Box from "@mui/material/Box";
 import {useEffect, useState} from "react";
-import axios from "axios";
+import axios from "./api/axios.js";
 import Progress from "./Progress.jsx";
 import Paper from "@mui/material/Paper";
 import Snoring from "../src/assets/sounds/YTDown.com_Shorts_Media_V4ibUx_Vg28_Snoring-meme-tiktok_007_48k.m4a"
