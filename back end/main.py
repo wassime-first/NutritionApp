@@ -8,13 +8,27 @@ from datetime import date,timedelta
 from api import search_food, search_normal_food
 import os
 from dotenv import load_dotenv
+from flask_cors import CORS
+
 
 load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = SECRET_KEY
 Bootstrap(app)
+app.config.update(
+    SESSION_COOKIE_SAMESITE='None',
+    SESSION_COOKIE_SECURE=True,
+    SECRET_KEY=SECRET_KEY,
+    REMEMBER_COOKIE_SAMESITE='None',
+    REMEMBER_COOKIE_SECURE=True
+)
+
+CORS(app, origins=[
+    "http://localhost:5173",
+    "https://nutritionapp-kce9.onrender.com/"
+], supports_credentials=True)
+
 
 login_manager = LoginManager()
 login_manager.init_app(app)
