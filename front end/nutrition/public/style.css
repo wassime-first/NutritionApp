@@ -1,0 +1,30 @@
+body {
+
+}
+#root {
+    min-height: 100%;
+    margin: 0;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+
+}
+
+main {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    /* Takes the space it needs */
+    flex-shrink: 0;
+}
